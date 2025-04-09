@@ -12,12 +12,13 @@
     <form
       action="https://search.out.maantje.me/search"
       method="get"
-      class="flex gap-2 mt-4 w-full max-w-prose"
+      class="flex gap-2 mt-4 w-full max-w-prose sm:flex-row flex-col"
     >
       <input
         type="search"
         name="q"
         placeholder="Enter your search query"
+        autofocus
         class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
       />
       <button
@@ -27,9 +28,13 @@
         Search
       </button>
     </form>
-    <p class="mt-4 text-sm text-gray-500">
+    <!-- <p class="mt-4 text-sm text-gray-500">
       Powered by <a href="https://perplexity.ai">Perplexity</a> and
       <a href="https://www.google.com">Google</a>
+    </p> -->
+    <p class="mt-4 text-sm text-gray-500 text-center">
+      Set as default search engine: <br />
+      <code>https://search.out.maantje.me/search?q=%s</code>
     </p>
   </section>
   <footer class="flex items-center justify-center">
